@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Até Agora</title>
+</head>
+
+<body>
+    <h1>Usando Links externos</h1>
+    <p>
+        Voce pode acessar o
+        <a href="https://www.cursoemvideo.com" target="_blank" rel="external">curso em video</a>
+    </p>
+    <h2>Links Interno</h2>
+    <p>
+        Esta é a primeira pagina vc pode acessar a
+        <a href="pag002.html" rel="next">próxima pagina</a>
+    </p>
+    <p>
+        Vôce pode acessar as
+        <a href="noticias/pag003.html" target="_self" rel="next">noticias</a>
+    </p>
+    <h1>Downloads do meu Site:</h1>
+    <ul type="square">
+        <li>
+            <a href="livro/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte"
+                type="application/pdf">Baixar pdf do modúlo 10</a>
+        </li>
+        <li>
+            <a href="livro/10 - Ligações em toda parte.rar" download="10 - Ligações em toda parte.rar"
+                type="application/zip">Pdf zipado</a>
+        </li>
+    </ul>
+
+    <h1>Inserindo Videos Hospedados localmente</h1>
+    <p>Este video esta hospedado no meu próprio servidor</p>
+    <video width="500" poster="imagens/elon.jpg" controls>
+        <source src="midia/meuvideo.mp4" type="video/mp4" />
+        <source src="midia/meuvideo.webm" type="video/webm" />
+
+        <p>Seu navegador não é compativel com o vídeo</p>
+    </video>
+
+    <h1>Imagens Dinamicas</h1>
+    <p>
+        Tente abrir este site responsivo em vários dispositivos diferentes ou
+        simplesmente diminua a janela
+    </p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png" />
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png" />
+        <img src="imagens/foto-g.png" alt="imagem flexivel" />
+    </picture>
+    <h1>Reproduzir aúdios</h1>
+    <audio preload="metadata" controls>
+        <source src="midia/money trees - kendrick lamar ft. jay rock [edit audio] (320 kbps).mp3" type="audio/mpeg" />
+        <p>
+            Infelizmente seu nav não consegue reproduzir o audio
+            <a href="midia/money trees - kendrick lamar ft. jay rock [edit audio] (320 kbps).mp3"></a>Baixe o aúdio MP3
+            aqui
+        </p>
+    </audio>
+</body>
+
+</html>
